@@ -6,14 +6,18 @@ against the printed net-rate list, and generate a numbered PDF bill.
 It is a single file with no build step, no server and no dependencies to install.
 The PDF engine and the fonts are bundled inside it, so it works with no internet.
 
+**Open it here: https://ruthwick2265.github.io/Venkateshwara-sale-sheet/**
+
 ![The sale sheet](docs/screenshot.png)
 
 ## Use it
 
+Open the link above in any browser, or keep a copy on the machine:
+
 1. Download or clone this repository.
 2. Double-click `index.html` (or right-click → Open with → your browser).
 
-That's it — there is nothing to install.
+Both are the same page, and both work offline once loaded. Nothing to install.
 
 - **Find a product** by name or item number in the search box, or tap a category.
 - **Set quantities** with the − / + buttons, or type a number straight into the box.
@@ -35,9 +39,10 @@ Two ways to get it there:
   phone's Files app with Chrome and bookmark it. Works offline afterwards.
   Note that WhatsApp's own preview cannot run a web page — download the file first.
   Google Drive cannot open `.html` as a page either; it will only offer a download.
-- **Publish it with GitHub Pages** (Settings → Pages → Deploy from branch → `main`,
-  folder `/root`). You get a link that opens on any device, and the phone can add
-  it to the home screen. Read the note on rates below before making the repo public.
+- **Open the published link** — https://ruthwick2265.github.io/Venkateshwara-sale-sheet/ — in
+  the phone's browser. In Chrome, ⋮ → *Add to Home screen* puts it on the home
+  screen and it opens like an app. GitHub Pages serves it from `main` / `/ (root)`,
+  so every push to `main` updates it within a minute or so.
 
 ## Change the rates
 
@@ -99,9 +104,10 @@ rupee glyph. The page itself shows `₹` everywhere.
 
 ## A note on the rates and your data
 
-`index.html` contains the full net-rate list. **Anyone who can see this repository
-can see those prices.** If that matters, keep the repository private — and
-remember that GitHub Pages needs a paid plan to publish from a private repository.
+`index.html` contains the full net-rate list, this repository is public, and the
+link above publishes it. **Anyone with the link can see those prices.** To take that
+back: turn Pages off under Settings → Pages → Branch → **None**, and make the
+repository private (Pages then needs a paid plan to publish at all).
 
 Nothing else leaves the device. There is no server, no analytics and no network
 call of any kind: quantities, customer references and bills stay in the browser
