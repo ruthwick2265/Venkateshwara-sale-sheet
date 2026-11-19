@@ -1,0 +1,12 @@
+# Generated bills — never commit a customer's bill
+*.pdf
+
+# OS and editor noise
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*~
+*.swp
