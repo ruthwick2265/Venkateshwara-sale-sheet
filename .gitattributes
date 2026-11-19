@@ -1,0 +1,6 @@
+# Normalize text to LF in the repository, native endings in the working copy,
+# so cloning on another platform doesn't rewrite every line.
+* text=auto
+
+*.png binary
+*.pdf binary
